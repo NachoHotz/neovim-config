@@ -4,6 +4,7 @@ call plug#begin('C:\Program Files (x86)\Vim\plugged')
 "colorschemes
 Plug 'gruvbox-community/gruvbox'
 Plug 'ishan9299/nvim-solarized-lua'
+Plug 'cocopon/iceberg.vim'
 
 "airline
 Plug 'vim-airline/vim-airline'
@@ -11,9 +12,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'enricobacis/vim-airline-clock'
 
 "syntax
-Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim' "intentation
 Plug 'leafgarland/typescript-vim'
-Plug 'ntpeters/vim-better-whitespace'
+Plug 'ntpeters/vim-better-whitespace' "see whitespaces in red
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-surround'
@@ -21,10 +22,11 @@ Plug 'jiangmiao/auto-pairs'
 
 "nerdtree
 Plug 'scrooloose/nerdtree'
-Plug 'xuyuanp/nerdtree-git-plugin'
-Plug 'PhilRunninger/nerdtree-visual-selection'
+Plug 'xuyuanp/nerdtree-git-plugin' "git integration for file changes/stages
+Plug 'PhilRunninger/nerdtree-visual-selection' "select multiple files
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'ryanoasis/vim-devicons'
+Plug 'ryanoasis/vim-devicons' "file icons
+Plug 'pbrisbin/vim-mkdir' "to make a new directory without errors
 
 "Git integration
 Plug 'tpope/vim-fugitive'
@@ -39,24 +41,22 @@ endif
 "autocompletion
 Plug 'neoclide/coc.nvim', { 'branch': 'release' } "like inteliscence
 
-"jump to different undo states
-Plug 'mbbill/undotree'
-
 "shows relative numbers or not depending of mode
 Plug 'ericbn/vim-relativize'
 
 "for better comment mappings
 Plug 'preservim/nerdcommenter'
 
-"to make a new directory without errors
-Plug 'pbrisbin/vim-mkdir'
-
 "telescope
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 Plug 'nvim-lua/plenary.nvim'
 
-"testing
-Plug 'vim-test/vim-test'
+"wild menu
+if has('nvim')
+  Plug 'gelguy/wilder.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'gelguy/wilder.nvim'
+endif
 
 call plug#end()

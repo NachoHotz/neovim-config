@@ -21,3 +21,4 @@ Once the repo is cloned, make sure to check the imports and all file system rela
 * settings.vim
 * mappings.vim
 
+All of these files contain some lines that relate to the OS´s file system, which you should change to make it work on your OS.

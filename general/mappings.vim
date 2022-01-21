@@ -1,27 +1,30 @@
+"Refresh init.vim
+nmap <Leader>so :source ${HOME}/.config/nvim/init.vim<CR>
+
 "Save file and refresh init.vim
 map <Leader>wso :w <bar> :source $HOME\AppData\Local\nvim\init.vim<CR>
 
-"Save file
+"Save the current file
 nnoremap <silent><Leader>ww :w<CR>
 
-"Save file and quit
+"Save the current file and quit
 nnoremap <silent><Leader>q :q<CR>
 nnoremap <silent><Leader>wq :wq<CR>
 nnoremap <silent><Leader>ew :q!<CR>
 
-"Run current file
+"Run current JS file
 nnoremap <silent><Leader>no :!node %<CR>
 
-"Save and run current file
+"Save and run current JS file
 nnoremap <silent><Leader>wno :w <bar> :!node %<CR>
 
-"Save file and run typescript compiler
+"Save the current file and run the typescript compiler
 nmap <Leader>wts :w <bar> :!tsc<CR>
 
-"Open terminal
+"Open the terminal
 nmap <Leader>tl <Plug>(coc-terminal-toggle)
 
-"Save file and open terminal
+"Save the current file and open the terminal
 nmap <Leader>wtl :w <bar> :terminal<CR>
 
 "Npm commnands
@@ -53,29 +56,29 @@ noremap <Leader><S-Tab> :bw!<CR>
 "Refresh init.vim
 nmap <Leader>so :source $HOME\AppData\Local\nvim\init.vim<CR>
 
-"Others
+"New tab
 noremap <C-t> :tabnew split<CR>
 
-"Compile c files
+"Compile current C file
 nnoremap <Leader>gcc :!gcc -Wall % -o %:r<CR>
 
-"Run c file
+"Run current C file
 nnoremap <Leader>gcr :terminal ./%:r<CR>
 
-"Compile and run c files
+"Compile and run current C file
 nnoremap <Leader>gccr :!gcc -Wall % -o %:r<CR> <bar> :terminal ./%:r<CR>
 
-"Compile c++ files
+"Compile current C++ file
 nnoremap <Leader>gpp :!g++ -Wall % -o %:r<CR>
 
-"Run c++ file
+"Run current C++ file
 nnoremap <Leader>gpr :terminal ./%:r<CR>
 
-"Compile and run c files
-nnoremap <Leader>gcpr :!g++ -Wall % -o %:r<CR> <bar> :terminal ./%:r<CR>
+"Compile and run current C file
+nnoremap <Leader>gppr :!g++ -Wall % -o %:r<CR> <bar> :terminal ./%:r<CR>
 
-"Run python files
+"Run current python file
 nnoremap <Leader>py :!python %<CR>
 
-"Save file and run python files
+"Save file and run current python files
 nnoremap <Leader>wpy :w <bar> :!python %<CR>
