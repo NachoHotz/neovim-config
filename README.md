@@ -1,6 +1,7 @@
 # neovim-config
 
-## IMPORTANT!!
+## IMPORTANT
+
 The configuration in the main branch is for Windows. To get the Linux configuration head into the development branch by cloning the repo with the following command:
 
 ```bash
@@ -22,3 +23,4 @@ Once the repo is cloned, make sure to check the imports and all file system rela
 * mappings.vim
 
 All of these files contain some lines that relate to the OS´s file system, which you should change to make it work on your OS.
+
