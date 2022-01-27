@@ -1,5 +1,5 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": "[html, css, javascript, js, typescript, ts, jsx, tsx, c, cpp, python, py]",
+  "coc.preferences.formatOnSaveFiletypes": ["html", "css", "javascript", "javascriptreact", "js", "typescript", "typescriptreact", "ts", "jsx", "tsx", "c", "cpp", "python", "py"],
   "prettier.semi": true,
   "prettier.trailingComma": "all",
   "prettier.singleQuote": true,
@@ -8,7 +8,5 @@
   "markdownlint.config": { "MD013": false },
   "javascript.suggest.paths": true,
   "javascript.suggest.names": false,
-  "sql.lintOnSave": true,
-  "sqlfluff.lintOnSave": true,
   "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd"
 }
