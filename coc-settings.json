@@ -1,5 +1,5 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["html", "css", "javascript", "javascriptreact", "js", "typescript", "typescriptreact", "ts", "jsx", "tsx", "c", "cpp", "python", "py"],
+  "coc.preferences.formatOnSaveFiletypes": ["html", "css", "javascript", "javascriptreact", "js", "typescript", "ts", "jsx", "tsx", "c", "cpp", "python", "py"],
   "prettier.semi": true,
   "prettier.trailingComma": "all",
   "prettier.singleQuote": true,
