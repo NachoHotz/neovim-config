@@ -1,5 +1,5 @@
 "--------------------------------Plugins--------------------------------------------
-call plug#begin('C:\Users\nacho\AppData\Local\nvim\autoload\plugged')
+call plug#begin('C:\Users\Usuario\AppData\Local\nvim\autoload\plugged')
 
 "colorschemes
 Plug 'gruvbox-community/gruvbox'
@@ -46,11 +46,6 @@ Plug 'ericbn/vim-relativize'
 
 "for better comment mappings
 Plug 'preservim/nerdcommenter'
-
-"telescope
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
-Plug 'nvim-lua/plenary.nvim'
 
 "wild menu
 if has('nvim')
