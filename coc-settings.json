@@ -15,9 +15,7 @@
     "python",
     "py",
     "ejs",
-    "json",
-    "php",
-    "xml"
+    "json"
   ],
   "prettier.semi": true,
   "prettier.trailingComma": "all",
