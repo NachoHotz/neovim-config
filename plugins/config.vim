@@ -8,4 +8,4 @@ source ~/AppData/Local/nvim/plugins/config/nerdtree.vim
 source ~/AppData/Local/nvim/plugins/config/airline.vim
 source ~/AppData/Local/nvim/plugins/config/wildermenu.vim
 
-colorscheme iceberg
+colorscheme gruvbox

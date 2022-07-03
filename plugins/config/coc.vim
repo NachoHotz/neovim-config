@@ -35,6 +35,9 @@ nmap <silent>gy <Plug>(coc-type-definition)
 nmap <silent>gi <Plug>(coc-implementation)
 nmap <silent>gr <Plug>(coc-references)
 
+"refresh suggestions of autocompletion
+inoremap <silent><expr> <c-space> coc#refresh()
+
 "CocUpdate
 nmap <Leader>cup :CocUpdate<CR>
 
@@ -42,4 +45,4 @@ nmap <Leader>cup :CocUpdate<CR>
 nmap <Leader>es :CocCommand eslint.executeAutofix<CR>
 nmap <Leader>mk :CocCommand markdownlint.fixAll<CR>
 nmap <Leader>p :CocCommand prettier.formatFile<CR>
-nmap <Leader>cda :CocAction<CR>
+nmap <Leader>cda <Plug>(coc-codeaction-line)
