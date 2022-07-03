@@ -2,10 +2,10 @@
 
 ## IMPORTANT
 
-The configuration in the main branch is for Windows. To get the Linux configuration head into the development branch by cloning the repo with the following command:
+The configuration in the main branch is for Windows. To get the Linux configuration head into the **linux-config** branch by cloning the repo with the following command:
 
 ```bash
-git clone -b development https://github.com/NachoHotz/neovim-config.git
+git clone -b linux-config https://github.com/NachoHotz/neovim-config.git
 ```
 
 If you only want to work in Windows, use the default ```git clone``` command:
